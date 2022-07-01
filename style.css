@@ -1,0 +1,115 @@
+body{
+    background-color : #93ed93;
+}
+.product_container{
+    margin: 100px auto;
+    width: fit-content;
+    /* center of parent div only left to right center (not top to bottom)*/
+    display: flex;
+    /* flex-direction: row; */
+    /* by default dir is row, if u dont write still it will work but for the col u need to specify */
+    /* margin-top: 20%; */
+}
+.product_image{
+    width: 300px;
+    /* background-color: black; */
+    height: 400px;
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 5px 27px -2px rgba(0,0,0,0.74);
+
+    /* border-radius: 100px; */
+    /* margin-top: 20%; */
+    /* jis box ko move karana ho use relative kar do and left 100px means : pos of div (ie relative ) from parent div (left se 100px ke dist pe start hoga */
+    /* absolute means changes pos to the root (ie whole page means body of page) */
+    /* relatice : changes as per parent div */
+}
+
+.product_detail{
+    width: 500px;
+    background-color : white;
+    height: 500px;
+    display: flex;
+    /* align child div in a row */
+}
+/* within detail there is two child div  */
+.detail_first{
+    flex: 0.6;
+/* display : flex writing in parent div means all child div get align in row */
+/* but in child div, flex : 0.5 means this div take 0.5% space of next div. if u write flex : 100 then it will take all width of next div meand next dic get hidden */
+    /* background-color: blue; */
+
+
+}
+.detail_second{
+    flex: 0.5;
+    /* background-color: aqua; */
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.code_text{
+    font-size: 12px;
+    opacity: 0.8;
+    /* opacity : dundhalapan */
+}
+.cost_text{
+    color: red;
+}
+.price_text{
+    font-size: 75px;
+}
+.color_img{
+    width: 20%;
+    height: 20%;
+}
+.color_img:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: scale(0.9);
+    /* image ubhar ke aayega */
+    cursor: pointer;
+    
+     
+}
+.ul_font{
+    font-size: 7px;;
+}
+.add_to_card_btn{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    /* border ke around blur black color ka aayega */
+}
+.main_apple_img{
+    position: absolute;
+    left:-75px;
+    height: 300px;
+    top: 25px;
+}
+.top_section{
+    flex : 0.8;
+    background-color:greenyellow ;
+    background: radial-gradient(#f4f4f4 30%, #adf42f 70%);
+    border-radius: 10px 10px 0px 0px;
+    /* radial and linear,
+    in radial : first color start wihin center and inc as a circle 30% and 2nd color after 30% of circle it will start */
+}
+     
+.bottom_Section{
+    flex: 0.2;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.apple_img:hover{
+    transform: scale(0.9);
+}
+.icon{
+    color: white;
+    margin: 15px;
+}
